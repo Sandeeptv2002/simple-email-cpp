@@ -3,12 +3,12 @@
 void ChilkatSample(void)
     {
     CkMailMan mailman;
-    mailman.put_SmtpHost("smtp.chilkatsoft.com");
+    mailman.put_SmtpHost("smtp.google.com");
     mailman.put_SmtpUsername("SandeepTV");
     mailman.put_SmtpPassword("123456");
     CkEmail email;
     email.put_Subject("simple text message");
-    email.put_Body("Hello all I’m Sandeep");
+    email.put_Body("Hello all Iâ€™m Sandeep");
     bool success = email.AddTo("Sandeep ","tvsandeep2002@gmail.com");
     success = mailman.SendEmail(email);
     if (success != true) {
